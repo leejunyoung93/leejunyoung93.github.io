@@ -198,6 +198,7 @@ header.showmenu{
   height:100%;
 	-webkit-transition: left .35s ease;
   transition: left .35s ease;
+  padding:10rem 4rem 4rem 4rem;
 }
 .menu_overlay.open {
 	left: 0;
@@ -222,9 +223,6 @@ header.showmenu{
 	-webkit-animation-delay: .55s;
 			animation-delay: .55s;
   }
-  .menu_overlay ul{
-    padding:10rem 5rem;
-    }
   .menu_overlay ul li {
 	display: block;
 	position: relative;
@@ -252,7 +250,43 @@ header.showmenu{
 	  left: 0;
 	}
   }
-  
+  .menu_overlay_container{
+    position: relative;
+    width:100%;
+    height:100%;
+  }
+  .menu_overlay_bottom{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+  }
+  a.menu_overlay_logo{
+    color:#fff;
+    font-size:3.75rem;
+    font-weight:800;
+    margin-bottom:10px;
+    display:block;
+  }
+
+  .menu_overlay_bottomt dl{
+    width:100%;
+    }
+  .menu_overlay_bottom dl dt{
+    clear:both;
+    color: #fff;
+    font-size:1.2rem;
+    float:left;
+    line-height:1.6;
+    }
+  .menu_overlay_bottom dl dt span{
+    margin: 0 10px;
+    }
+  .menu_overlay_bottom dl dd{
+    color: #e9e9e9;
+    font-size:1.2rem;
+    line-height:1.6;
+  }
 /**
  * Home
  */

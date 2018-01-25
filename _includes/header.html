@@ -10,11 +10,24 @@
   <nav class="menu">
     <a href="#" class="menu_btn"><span>Menu</span></a>
     <div class="menu_overlay">
-            <ul>
-                <li><a href="../index.html"><span>01</span>HOME</a></li>
-                <li><a href="{{ "/about/" | prepend: site.baseurl }}"><span>02</span>ABOUT</a></li>
-                <li><a href="../works.html"><span>03</span>WORKS</a></li>
-            </ul>
-        </div>
+      <div class="menu_overlay_container">
+      <ul>
+        <li><a href="../index.html"><span>01</span>HOME</a></li>
+        <li><a href="{{ "/about/" | prepend: site.baseurl }}"><span>02</span>ABOUT</a></li>
+        <li><a href="../works.html"><span>03</span>WORKS</a></li>
+      </ul>
+      <div class="menu_overlay_bottom">
+        <a href="../index.html" class="menu_overlay_logo">Jello.</a>
+        <dl>
+          <dt>PHONE<span>:</span></dt>
+          <dd>010-7278-8789</dd>
+          <dt>E-MAIL<span>:</span></dt>
+          <dd>ab12b1125@gmail.com</dd>
+          <dt>ADDRESS<span>:</span></dt>
+          <dd>경기도 의왕시 내손동 인덕원역 인근</dd>
+        </dl>
+      </div>
+      </div>
+    </div>
   </nav>
 </header>

@@ -1,3 +1,8 @@
+
+/**
+ * Slider
+ */
+
 (function() {
 
 	function init(item) {
