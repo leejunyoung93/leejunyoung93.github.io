@@ -5,12 +5,13 @@
 
   <body>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="wrap">
+      {% include header.html %}
+      <main class="container">
+        <div class="mobile_padding">
         {{ content }}
-      </div>
+        </div>
+      </main>
     </div>
 
     {% include footer.html %}
