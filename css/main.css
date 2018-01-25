@@ -108,22 +108,18 @@ a {
   color:#e0e0e0;
   padding-right:0.75rem;
 }
-
-
 header.showmenu{
   width:100%;
   height:100%;
-  background:#4d38ed;
+  position:fixed;
 }
-
-
 .menu{
   display:none;
   width:40px;
   height:40px;
 }
 .menu_btn {
-	position: absolute;
+	position: fixed;
   top:30px;
   left:20px;
 	display: block;
@@ -193,54 +189,70 @@ header.showmenu{
 	animation: plusHorizontal 0.3s ease forwards;
 }
 
-.menu_overlay {
-	z-index: 10;
-	position: absolute;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background: none;
+.menu_overlay{
+  position:fixed;
+	background: #4d38ed;
+	left: -100%;
+	top: 0;
+  width:100%;
+  height:100%;
+	-webkit-transition: left .35s ease;
+  transition: left .35s ease;
 }
-
 .menu_overlay.open {
-	background:#4d38ed;
-	height: 100%;
-}
-
-.menu_overlay ul {
-	position: absolute;
-	visibility: hidden;
-	top: -40%;
 	left: 0;
-	width: 100%;
-	padding: 0;
-	opacity: 0;
-  transition: all 0.6s cubic-bezier(0.7, 0, 0.36, 0.63);
-	transform: perspective(600px) rotateX(20deg) rotateY(-20deg);
-}
-
-.menu_overlay ul li{
-  text-align:center;
-  margin:3rem 0;
-}
-.menu_overlay ul li a{
-  color:#fff;
-}
-
-
-.menu_overlay.open ul {
-	top: 40px;
-	left:0;
 	visibility: visible;
-	opacity: 1;
-	margin-top: 0;
-	transform: perspective(600px) rotateX(0deg) rotateY(0deg);
-	transition: all 0.6s cubic-bezier(0.7, 0, 0.36, 0.63);
-	transition-delay: 0.4s;
+	-webkit-transition: left .35s ease;
+	transition: left .35s ease;
 }
-
-
-
+.menu_overlay.open::before {
+	left: 0;
+}
+.menu_overlay.open ul li {
+	-webkit-animation: fadeInRight .5s ease forwards;
+			animation: fadeInRight .5s ease forwards;
+	-webkit-animation-delay: .35s;
+			animation-delay: .35s;
+}
+  .menu_overlay.open ul li:nth-of-type(2) {
+	-webkit-animation-delay: .45s;
+			animation-delay: .45s;
+  }
+  .menu_overlay.open ul li:nth-of-type(3) {
+	-webkit-animation-delay: .55s;
+			animation-delay: .55s;
+  }
+  .menu_overlay ul{
+    padding:10rem 5rem;
+    }
+  .menu_overlay ul li {
+	display: block;
+	position: relative;
+	opacity: 0;
+  }
+  .menu_overlay ul li a {
+	display: block;
+	color: #fff;
+	font-size:2rem;
+	line-height:30px;
+	margin-bottom:10px;
+  }
+  .menu_overlay ul li a span {
+	color: rgba(255,255,255,0.3);
+	font-size:1.6rem;
+	margin-right:10px;
+  }
+  @keyframes fadeInRight {
+	0% {
+	  opacity: 0;
+	  left: -20%;
+	}
+	100% {
+	  opacity: 1;
+	  left: 0;
+	}
+  }
+  
 /**
  * Home
  */
