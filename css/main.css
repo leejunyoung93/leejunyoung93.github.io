@@ -375,6 +375,7 @@ header.showmenu{
 	transform: translateY(-70%);
 	transition: transform .5s .1s, opacity .5s .1s;
   will-change: transform, opacity;
+  box-sizing:border-box;
 }
 
 .slide_item_caption a.coverletter_download_mobile{
