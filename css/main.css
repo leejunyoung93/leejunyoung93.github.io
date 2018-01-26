@@ -308,13 +308,13 @@ header.showmenu{
   will-change: visibility;
 }
 .slide_item_image.slide_item_image1{
-  background-image: url('../img/slide1.jpg');
+  background-image: url('https://leejunyoung93.github.io/img/slide1.jpg');
 }
 .slide_item_image.slide_item_image2{
-  background-image: url('../img/slide2.jpg');
+  background-image: url('https://leejunyoung93.github.io/img/slide2.jpg');
 }
 .slide_item_image.slide_item_image3{
-  background-image: url('../img/slide3.jpg');
+  background-image: url('https://leejunyoung93.github.io/img/slide3.jpg');
 }
 .slide_item_image{
   float:right;
