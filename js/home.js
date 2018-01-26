@@ -3,7 +3,7 @@
  * Slider
  */
 
-(function() {
+function Slider() {
 
 	function init(item) {
 		var items = item.querySelectorAll('.slide_item_content'),
@@ -124,4 +124,4 @@
 		init(item);
 	});
 
-})();
+}

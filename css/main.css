@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 /**
  * Reset some basic elements
  */
@@ -54,9 +52,6 @@ a {
   color:#222;
 }
 
-*{
-  box-sizing:border-box;
-}
 /**
  * Defalt
  */
@@ -95,6 +90,7 @@ a {
   width:calc(100% / 3);
   float:left;
   padding:3.35rem 1.5rem; 
+  box-sizing:border-box;
 }
 .nav_item_link{
   display:block;
@@ -199,6 +195,7 @@ header.showmenu{
 	-webkit-transition: left .35s ease;
   transition: left .35s ease;
   padding:10rem 4rem 4rem 4rem;
+  box-sizing:border-box;
 }
 .menu_overlay.open {
 	left: 0;
