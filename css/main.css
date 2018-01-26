@@ -1,7 +1,16 @@
 @charset "UTF-8";
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*
+ * css import 는 사용하지 말것.
+ * 이유 : 타 외부 참조링크에비해 느리다는 단점이 있으며 이렇게 선언해줄경우 지금 css파일에 의존성을 가지게됨.
+ * css import 보다는 html link 태그를 선언해 현재 css보다 먼저 선언할것.
+*/
+
 /**
  * Reset some basic elements
+ * 제대로 사용할 css만 되어있는지 확인할것, 모든 엘리먼트가 font를 상속받아야할 의무는 없음.
+ * 비표준 브라우저를 지원하지 않을것이며 HTML5.2를 준수할거라 미지원 태그에 방어코드인 display:block는 삭제할것. 
  */
  html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
