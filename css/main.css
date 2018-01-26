@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 /*
  * css import 는 사용하지 말것.
@@ -8,8 +7,6 @@
  * css import 보다는 html link 태그를 선언해 현재 css보다 먼저 선언할것.
 */
 
-=======
->>>>>>> fd2c0dc4a0e86d7d50800e2e7d1adce521427152
 /**
  * Reset some basic elements
  * 제대로 사용할 css만 되어있는지 확인할것, 모든 엘리먼트가 font를 상속받아야할 의무는 없음.
