@@ -7,7 +7,7 @@
  * 그리고 dom이 로드되고 나서 사용할수 있도록 설정하는게 안전함. 아무리 페이지 최하단이라지만 방어는 항상 해야함.
  */
 
-(function() {
+function Slider() {
 
 	function init(item) {
 		var items = item.querySelectorAll('.slide_item_content'),
@@ -128,4 +128,5 @@
 		init(item);
 	});
 
-})();
+}
+
