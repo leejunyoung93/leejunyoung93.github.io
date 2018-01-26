@@ -126,4 +126,3 @@ function Slider() {
 
 }
 
-Slider();
