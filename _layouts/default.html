@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="ko">
 
-	{% include head.html %}
+{% include head.html %}
 
-	<body>
-		<div class="wrap">
-			{% include header.html %}
-			<main class="container">
-				{{ content }}
-			</main>
-		</div>
-		{% include footer.html %}
-	</body>
+<body>
+<div class="wrap">
+	<div class="tpage"></div>
+	{% include header.html %}
+	<main class="container {{ page.pageclass }}">
+		<h2 hidden>{{ page.pagename }}</h2>
+		{{ content }}
+	</main>
+</div>
+<script src="/js/common.js"></script>
+</body>
 </html>

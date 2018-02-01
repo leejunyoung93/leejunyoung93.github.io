@@ -1,15 +1,25 @@
 <head>
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!--
+	- width=device-width = 화면의 크기를 디바이스의 화면에 맞춤
+	- initial-scale=1 = 기본적으로 보여줄 화면 배수 (100%)
+	- minimum-scale=1 = 유저가 줄일수 있는 화면 배수
+	- maximum-scale=1 = 유저가 늘릴수 있는 화면 배수
+	-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800">
+	<link rel="stylesheet" href="/css/main.css">
 
-    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="image" content="https://~~">
+	<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  
+	<meta property="og:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="300">
 </head>
 
