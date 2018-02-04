@@ -5,17 +5,17 @@
 
 <body>
 <div class="wrap">
-	<div class="tpage">
-		<div class="tpage_item"></div>
-		<div class="tpage_item"></div>
-		<div class="tpage_item"></div>
-		<div class="tpage_item"></div>
-		<div class="tpage_item"></div>
-		<div class="tpage_item"></div>
-	</div>
-	{% include header.html %}
+	{% include tpage.html %}
+	
+	{% if page.pagename != 'intro' %}
+		{% include header.html %}
+	{% endif %}
+
 	<main class="container {{ page.pageclass }}">
+		{% if page.pagename != 'intro' %}
 		<h2 hidden>{{ page.pagename }}</h2>
+		{% endif %}
+		
 		{{ content }}
 	</main>
 </div>
