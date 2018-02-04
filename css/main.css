@@ -204,7 +204,7 @@ section.intro{
     }
 }
 
-/* media 선언방식 고칠것, media 선언에 따른 css 순서 알려줄게. */
+/* media 선언방식 고칠것, media 선언에 따른 css 순서 알려줄게. 
 @media (max-width:1024px) {
     .tpage_item:nth-last-of-type(1),
     .tpage_item:nth-last-of-type(6){
@@ -218,7 +218,8 @@ section.intro{
     .tpage_item:nth-last-of-type(4){
         width:42%;
     }
-} */
+} 
+*/
 
 .reveal_vertical{
     margin: 0;
