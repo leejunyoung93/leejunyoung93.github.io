@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function(){
 // }
 
 
+
+
 function Slider() {	
 	var	$slide = $('.slide'),
 		$item = $('.slide ul.list li.item'),
