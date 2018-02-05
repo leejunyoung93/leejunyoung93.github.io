@@ -59,9 +59,9 @@ function Slider() {
 		$prevbtn = $('.slide .slide_nav button.prev'),
 		$nextbtn = $('.slide .slide_nav button.next'),
 		autoSlide = true,
-		current = 0
+		current = 0;
 		
-		$('.slide span.length').innerHTML = "/ " + $item.length;
+		$('span.length').innerHTML = "/ " + $item.length;
 
 	$item[current].classList.add('current');
 	if ($item.length > 1){
