@@ -136,7 +136,6 @@ img{border:0;}
 .tpage {
     display:block;
     z-index:100;
-    background:#4d38ed;
 }
 .tpage.hidden {
     display:none;
