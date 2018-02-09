@@ -136,6 +136,7 @@ img{border:0;}
 .tpage {
     display:block;
     z-index:100;
+    background:#4d38ed;
 }
 .tpage.hidden {
     display:none;
@@ -143,6 +144,9 @@ img{border:0;}
 .tpage.in,.tpage.out{
     background:transparent;
     transition-delay: 0.5s;
+}
+.tpage .grid-item{
+    background: #4d38ed;
 }
 .tpage.in .grid-item{    
     animation-direction: reverse;
@@ -160,7 +164,6 @@ img{border:0;}
     animation-delay:0.5s; 
 }
 .tpage-intro .grid-item{
-    background:#fff;
     transform-origin: top;
     animation-name:transY;
     animation-duration: 0.8s;
@@ -183,9 +186,8 @@ img{border:0;}
 .tpage-home .grid-item,
 .tpage-about .grid-item,
 .tpage-works .grid-item{
-    background:#4d38ed;
     animation-name:transX;
-    animation-duration: 1.3s; 
+    animation-duration: 0.8s; 
 }
 .tpage-home .grid-item{
     transform-origin:left;
@@ -951,9 +953,6 @@ header.bg{
 @media all and (max-width:480px){
     html{
         font-size:12px;
-    }
-    .tpage-intro .grid-item{
-        animation-duration: 1.3s;
     }
     .slider .slide .slide-text{
         width:70%;

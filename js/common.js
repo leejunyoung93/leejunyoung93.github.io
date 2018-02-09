@@ -20,7 +20,7 @@ function tPage(){
 
     setTimeout(function(){
         $tpage.classList.add('hidden')
-	},1800);
+	},1500);
 	
     var tpage_current = $tpage.getAttribute('data-page');
     $tpage.classList.add('tpage-'+ tpage_current,'out');
@@ -32,7 +32,7 @@ function tPage(){
             link_location = this.getAttribute('href');
             setTimeout(function(){
                 window.location = link_location
-            },2000);
+            },1800);
             var tpage_target = this.getAttribute('data-link');
             $tpage.classList.remove('hidden','tpage-'+ tpage_current,'out')
             $tpage.classList.add('tpage-'+ tpage_target,'in')
