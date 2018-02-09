@@ -953,6 +953,9 @@ header.bg{
     html{
         font-size:12px;
     }
+    .slider .slide .slide-text{
+        width:70%;
+    }
     .slider .slide .slide-text .title{
         font-size:2.8rem;
     }
