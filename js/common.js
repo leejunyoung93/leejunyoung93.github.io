@@ -23,7 +23,7 @@ function tPage(){
 	},1800);
 	
     var tpage_current = $tpage.getAttribute('data-page')
-    $tpage.classList.add('tpage-'+ tpage_current,'out')
+    $tpage.classList.add('act','tpage-'+ tpage_current,'out')
 
 	$tpage_link = $('.link');
         for (var i = 0; i < $tpage_link.length; i++) {
