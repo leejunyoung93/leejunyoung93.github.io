@@ -953,9 +953,11 @@ header.bg{
     html{
         font-size:12px;
     }
-
-    .slider .slide .slide-text{
-        width:80%;
+    .slider .slide .slide-text .title{
+        font-size:2.8rem;
+    }
+    .slider .slide .slide-text .count .count-num{
+        font-size:7rem;
     }
     .slider .slide .slide-image{
         width:50%;

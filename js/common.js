@@ -22,10 +22,10 @@ function tPage(){
         $tpage.classList.add('hidden')
 	},1800);
 	
-    var tpage_current = $tpage.getAttribute('data-page')
-    $tpage.classList.add('tpage-'+ tpage_current,'out')
+    var tpage_current = $tpage.getAttribute('data-page');
+    $tpage.classList.add('tpage-'+ tpage_current,'out');
 
-	$tpage_link = $('.link');
+	var $tpage_link = $('.link');
         for (var i = 0; i < $tpage_link.length; i++) {
             $tpage_link[i].addEventListener('click',function(evt){
             evt.preventDefault();
