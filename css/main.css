@@ -136,7 +136,6 @@ img{border:0;}
 .tpage {
     z-index:100;
     background:#4d38ed;
-    transition-delay:0.5s;
 }
 .tpage.hidden {
     display:none;
@@ -147,6 +146,7 @@ img{border:0;}
 .tpage.in,
 .tpage.out{
     background:transparent;
+    transition-delay:0.5s;
 }
 .tpage.in .grid-item{    
     animation-direction: reverse;
