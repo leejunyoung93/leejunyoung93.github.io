@@ -140,7 +140,7 @@ img{border:0;}
 .tpage.hidden {
     display:none;
 }
-.tpage-intro{
+.tpage.tpage-intro{
     background:#fff;
 }
 .tpage.in,
