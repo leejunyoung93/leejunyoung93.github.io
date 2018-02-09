@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: works
 permalink: /works/
 pagename : works
@@ -8,6 +8,11 @@ pagename : works
     <section class="works">
             <h3 class="page-title"></h3>
             <ol class="myworks-list">
+                {% for post in site.posts %}
+                <li class="myworks-list_item">
+                    <a href="{{ post.link }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
                 <li class="myworks-list_item">아니얘네셋구조?맞지않냐겅와
                     필요하지아늠?
                     <div class="myworks-list_item_link">얘가 myworkslistitem 윗부분을다차지해야함그럼a태그</div>

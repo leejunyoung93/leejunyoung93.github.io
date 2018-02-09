@@ -4,13 +4,16 @@
 {% include head.html %}
 
 <body>
-<div class="wrap">
-	{% include tpage.html %}
-	
+<div class="wrap">	
+	<div class="tpage grid" data-page="{{ page.pagename }}">
+    	{% include griditem.html %}
+	</div>
 	{% if page.pagename != 'intro' %}
 		{% include header.html %}
+		<div class="grid grid-line">
+			{% include griditem.html %}
+		</div>
 	{% endif %}
-
 	<main class="container {{ page.pageclass }}">
 		{% if page.pagename != 'intro' %}
 		<h2 hidden>{{ page.pagename }}</h2>
@@ -19,6 +22,7 @@
 		{{ content }}
 	</main>
 </div>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=MMEhvjc9QCNWooqccZBM"></script>
 <script src="/js/common.js"></script>
 </body>
 </html>

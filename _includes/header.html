@@ -1,26 +1,27 @@
 <header class="header clearfix">
-	<a href="/index" class="tpage_link logo" data-link ="intro"><span class="jelly">Jello</span></a></h1>
+	<a href="/index" class="link link-logo" data-link ="intro"><span class="jelly-effect">Jello</span></a></h1>
 	<nav class="nav clearfix">
-		<a href="/home/" class="tpage_link" data-link = "home"><span class="num">01</span>HOME</a>
-		<a href="/about/" class="tpage_link" data-link ="about"><span class="num">02</span>ABOUT</a>
-		<a href="/works/" class="tpage_link" data-link = "works"><span class="num">03</span>WORKS</a>
+		<a href="/home/" class="link grid1" data-link = "home"><span class="link-num">01</span>HOME</a>
+		<a href="/about/" class="link grid1" data-link ="about"><span class="link-num">02</span>ABOUT</a>
+		<a href="/works/" class="link grid1" data-link = "works"><span class="link-num">03</span>WORKS</a>
 	</nav>
-	<nav class="nav_mobile">
-		<button class="menu_btn">Menu</button>
-		<div class="overlay">
-			<div class="menu">
-				<ul class="list_top">
-					<li><a href="/home/" class="tpage_link" data-link = "home"><span class="num">01</span>HOME</a></li>
-					<li><a href="/about/" class="tpage_link" data-link ="about"><span class="num">02</span>ABOUT</a></li>
-					<li><a href="/works/" class="tpage_link" data-link = "works"><span class="num">03</span>WORKS</a></li>
-				</ul>
-				<ul class="list_bottom">
-					<li><a href="/index" class="tpage_link logo" data-link ="intro"><span class="jelly">Jello</span></a></li>
-					<li><p>PHONE<span>:</span>010-7278-8789</p></li>
-					<li><p>E-MAIL<span>:</span>ab12b1125@gmail.com</p></li>
-					<li><p>ADDRESS<span>:</span>경기도 의왕시 내손동 인덕원역 인근</p></li>
-				</ul>
+	<nav class="nav-mobile">
+		<button class="menu-btn ts"></button>
+			<div class="grid">
+				{% include griditem.html %}
+				<div class="menu">
+					<ul class="menu-list">
+						<li class="menu-item"><a href="/home/" class="link" data-link = "home"><span class="link-num">01</span>HOME</a></li>
+						<li class="menu-item"><a href="/about/" class="link" data-link ="about"><span class="link-num">02</span>ABOUT</a></li>
+						<li class="menu-item"><a href="/works/" class="link" data-link = "works"><span class="link-num">03</span>WORKS</a></li>
+						<li class="menu-item menu-item-last">
+							<p class="logo">Jello.</p>
+							<p class="info">PHONE<span class="margin">:</span>010-7278-8789</p>
+							<p class="info">E-MAIL<span class="margin">:</span>ab12b1125@gmail.com</p>
+							<p class="info">ADDRESS<span class="margin">:</span>경기도 의왕시 내손동 인덕원역 인근</p>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
     </nav>
 </header>
