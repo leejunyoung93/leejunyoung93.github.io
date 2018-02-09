@@ -19,7 +19,7 @@ function tPage(){
 	var $tpage =  $('.tpage');
 
     setTimeout(function(){
-        $tpage.classList.add('hidden')
+        $tpage.classList.remove('act')
 	},1800);
 	
     var tpage_current = $tpage.getAttribute('data-page')
@@ -34,8 +34,8 @@ function tPage(){
                 window.location = link_location
             },2000);
             var tpage_target = this.getAttribute('data-link');
-            $tpage.classList.remove('hidden','tpage-'+ tpage_current,'out')
-            $tpage.classList.add('tpage-'+ tpage_target,'in')
+            $tpage.classList.remove('tpage-'+ tpage_current,'out')
+            $tpage.classList.add('act','tpage-'+ tpage_target,'in')
         })
     } 
 }	
