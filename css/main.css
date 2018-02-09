@@ -539,6 +539,7 @@ img{border:0;}
     -moz-transform:translateY(-50%);
     -ms-transform:translateY(-50%);
     transform:translateY(-50%);
+    z-index:-1;
 }
 .center-box .jello{
     color:#fff;
