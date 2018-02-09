@@ -136,18 +136,9 @@ img{border:0;}
 .tpage {
     display:none;
     z-index:100;
-    background:#4d38ed;
 }
 .tpage.act {
     display:block;
-}
-.tpage.tpage-intro.act{
-    background:#fff;
-}
-.tpage.in,
-.tpage.out{
-    background:transparent;
-    transition-delay:0.5s;
 }
 .tpage.in .grid-item{    
     animation-direction: reverse;
