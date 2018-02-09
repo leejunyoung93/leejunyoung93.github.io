@@ -147,6 +147,8 @@ img{border:0;}
 }
 .tpage .grid-item{
     background: #4d38ed;
+    animation-duration: 0.8s;
+    animation-delay:0.5s;
 }
 .tpage.in .grid-item{    
     animation-direction: reverse;
@@ -154,19 +156,17 @@ img{border:0;}
     -moz-transform:scale(0,0);     
     -webkit-transform:scale(0,0);    
     transform:scale(0,0);
-    animation-delay:0.5s; 
 }
 .tpage.out .grid-item{
     -o-transform:scale(1,1);       
     -moz-transform:scale(1,1);     
     -webkit-transform:scale(1,1);    
     transform:scale(1,1);
-    animation-delay:0.5s; 
+ 
 }
 .tpage-intro .grid-item{
     transform-origin: top;
     animation-name:transY;
-    animation-duration: 0.8s;
 }
 .tpage-intro .grid-item:nth-child(2){
     animation-delay:0.6s;
@@ -187,7 +187,6 @@ img{border:0;}
 .tpage-about .grid-item,
 .tpage-works .grid-item{
     animation-name:transX;
-    animation-duration: 0.8s; 
 }
 .tpage-home .grid-item{
     transform-origin:left;
