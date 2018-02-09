@@ -19,11 +19,11 @@ function tPage(){
 	var $tpage =  $('.tpage');
 
     setTimeout(function(){
-        $tpage.classList.remove('act')
+        $tpage.classList.add('hidden')
 	},1800);
 	
     var tpage_current = $tpage.getAttribute('data-page')
-    $tpage.classList.add('act','tpage-'+ tpage_current,'out')
+    $tpage.classList.add('tpage-'+ tpage_current,'out')
 
 	$tpage_link = $('.link');
         for (var i = 0; i < $tpage_link.length; i++) {
@@ -34,8 +34,8 @@ function tPage(){
                 window.location = link_location
             },2000);
             var tpage_target = this.getAttribute('data-link');
-            $tpage.classList.remove('tpage-'+ tpage_current,'out')
-            $tpage.classList.add('act','tpage-'+ tpage_target,'in')
+            $tpage.classList.remove('hidden','tpage-'+ tpage_current,'out')
+            $tpage.classList.add('tpage-'+ tpage_target,'in')
         })
     } 
 }	
