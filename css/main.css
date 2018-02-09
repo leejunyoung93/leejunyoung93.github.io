@@ -141,7 +141,9 @@ img{border:0;}
 .tpage.hidden {
     display:none;
 }
-.tpage.tpage-intro,
+.tpage-intro{
+    background:#fff;
+}
 .tpage.in,
 .tpage.out{
     background:transparent;
