@@ -269,6 +269,7 @@ img{border:0;}
 .reveal-vertical,
 .reveal-horizontal{
     overflow: hidden;
+    line-height:1;
 }
 .reveal{
     display: block;
