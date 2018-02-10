@@ -2,7 +2,7 @@ body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,fieldset,legend,figure,menu{
 table,th,td{border-spacing:0;border-collapse:collapse}
 ol,ul,li{list-style:none}
 h1,h2,h3,h4,h5,h6{font-size:1em;font-weight:normal}
-body,input,textarea,keygen,select,button{font-family:'Montserrat','Nanum Gothic';color:#222;}
+body,input,textarea,keygen,select,button{font-family: 'Montserrat', 'Nanum Barun Gothic';color:#222;}
 input,textarea,select,button{margin:0;padding:0;border-radius:0;outline:0;vertical-align:middle}
 a:link,a:visited,a:hover,a:active{text-decoration:none}
 a,button,input[type='submit'],input[type='button'],input[type='reset']{color:#222;border:0;background:transparent;cursor:pointer;text-align:center;}
@@ -968,13 +968,13 @@ img{border:0;}
 
 .work-item .left-area .date{
     margin-bottom:25%;
-    font-size:0.875rem;
+    font-size:14px;
     font-weight:600;
+    line-height:0.8;
 }
 
 .work-item .left-area .explanation{
-    font-size:0.7rem;
-    font-weight:500;
+    font-size:12px;
     line-height:1.8;
 }
 
@@ -1074,7 +1074,6 @@ header.bg{
         width:50%;
     }
     .work-link .top-area .goto{
-        text-indent: -999px;
+        display:none;
     }
-
 }
