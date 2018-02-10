@@ -966,6 +966,9 @@ img{border:0;}
     box-sizing:border-box;
 }
 
+.work-item .left-area .subtitle{
+    line-height:0.8;
+}
 .work-item .left-area .date{
     margin-bottom:25%;
     font-size:14px;
