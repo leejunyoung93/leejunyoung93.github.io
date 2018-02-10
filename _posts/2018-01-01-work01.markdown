@@ -1,7 +1,0 @@
----
-number : '01'
-title : '준영.com'
-type : 'web site'
-image : '/img/~~~'
-link : 'http~~'
----

@@ -1,0 +1,8 @@
+---
+number : '1st'
+title : 'FRENCH PAPER'
+type : 'WEB SITE'
+image : '/img/work1.jpg'
+link : 'http~~'
+explanation : '울산에 위치한 펜션 프렌치 페이퍼를 소개하는 웹사이트입니다.'
+---

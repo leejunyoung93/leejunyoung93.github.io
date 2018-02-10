@@ -10,15 +10,11 @@
 	</div>
 	{% if page.pagename != 'intro' %}
 		{% include header.html %}
-		<div class="grid grid-line">
-			{% include griditem.html %}
-		</div>
 	{% endif %}
 	<main class="container {{ page.pageclass }}">
 		{% if page.pagename != 'intro' %}
 		<h2 hidden>{{ page.pagename }}</h2>
-		{% endif %}
-		
+		{% endif %}		
 		{{ content }}
 	</main>
 </div>

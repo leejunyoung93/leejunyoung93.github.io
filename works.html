@@ -4,24 +4,30 @@ title: works
 permalink: /works/
 pagename : works
 ---
-<div class="page">
+<div class="grid grid-line">
+    {% include griditem.html %}
+</div>
+<div class="layout grid4">
     <section class="works">
-            <h3 class="page-title"></h3>
-            <ol class="myworks-list">
-                {% for post in site.posts %}
-                <li class="myworks-list_item">
-                    <a href="{{ post.link }}">{{ post.title }}</a>
-                </li>
-                {% endfor %}
-                <li class="myworks-list_item">아니얘네셋구조?맞지않냐겅와
-                    필요하지아늠?
-                    <div class="myworks-list_item_link">얘가 myworkslistitem 윗부분을다차지해야함그럼a태그</div>
-                    <div class="myworks-list_item_image"></div>
-                    <div class="myworks-list_item_info"></div>
-                </li>
-            </div>
+        <div class="myworks">
+        <h3 class="title">MY<span class="block">WORKS</span></h3>
+        <ol class="layout-list layout-list-alternative works-list clearfix">
+            {% for post in site.posts %}
+            <li class="layout-item work-item">
+                <a href="{{ post.link }}" class="work-link">
+                    <p class="top-area clearfix">WORK {{ post.number }}<span class="goto clearfix">GO TO SITE</span></p>
+                    <div class="work-image"><img src="{{ post.image }}" alt="work"></div>
+                    <div class="left-area">
+                        <h4 class="subtitle">{{ post.title }}</h4>
+                        <p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+                        <p class="explanation">{{ post.explanation }}</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ol>
+        </div>
     </section>
 </div>
-<div class="works-nav"></div>
 
 

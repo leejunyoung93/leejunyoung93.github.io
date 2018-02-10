@@ -1,0 +1,8 @@
+---
+number : '3rd'
+title : 'JIMMY MARBLE'
+type : 'WEB SITE'
+image : '/img/work3.jpg'
+link : 'http~~'
+explanation : 'JIMMY MARBLE의 작품을 소개하는 웹사이트입니다.'
+---

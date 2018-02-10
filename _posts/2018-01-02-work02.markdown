@@ -1,7 +1,0 @@
----
-number : '02'
-title : '앱'
-type : 'app'
-image : '/img/~~~'
-link : 'http~~'
----
