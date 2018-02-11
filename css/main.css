@@ -927,27 +927,39 @@ img{border:0;}
     height:auto;
     transition:0.3s;
 }
-
+.work-link:hover .work-image img{
+    transform:translate(30px,30px);
+}
 .layout-item .work-link .work-image img{
     -o-clip-path:inset(0 0 100% 0);
     -moz-clip-path:inset(0 0 100% 0);
     -webkit-clip-path:inset(0 0 100% 0);
     clip-path:inset(0 0 100% 0);
 }
-.work-link:hover .work-image img{
-    transform:translate(30px,30px);
-}
+
 .layout-item.act .work-link .work-image img{
     -o-animation: clipImage 0.4s cubic-bezier(0.99, 0.01, 0.45, 0.9) forwards 0.7s;
     -moz-animation: clipImage 0.4s cubic-bezier(0.99, 0.01, 0.45, 0.9) forwards 0.7s;
 	-webkit-animation: clipImage 0.4s cubic-bezier(0.99, 0.01, 0.45, 0.9) forwards 0.7s;
     animation: clipImage 0.4s cubic-bezier(0.99, 0.01, 0.45, 0.9) forwards 0.7s;
 }
+@-o-keyframes clipImage{
+    to{
+        clip-path:inset(0 0 0 0);
+    }
+}
+@-moz-keyframes clipImage{
+    to{
+        clip-path:inset(0 0 0 0);
+    }
+}
+@-webkit-keyframes clipImage{
+    to{
+        clip-path:inset(0 0 0 0);
+    }
+}
 @keyframes clipImage{
     to{
-        -o-clip-path:inset(0 0 0 0);
-        -moz-clip-path:inset(0 0 0 0);
-        -webkit-clip-path:inset(0 0 0 0);
         clip-path:inset(0 0 0 0);
     }
 }
@@ -993,19 +1005,45 @@ img{border:0;}
     fill: none;
     stroke: #666;
 }
-
+.work-link .goto svg polyline{
+    stroke-dasharray: 18 18;
+}
+.work-link:hover .goto svg polyline{
+    opacity:0;
+    -o-animation:polyline 0.4s forwards 1.2s;
+    -moz-animation:polyline 0.4s forwards 1.2s;
+    -webkit-animation:polyline 0.4s forwards 1.2s;
+    animation:polyline 0.4s forwards 1.2s;
+}
 .work-link .goto svg line{
     stroke-dasharray: 100 100;
 }
 .work-link:hover .goto svg line{
+    opacity:0;
+    -o-animation:line 0.8s forwards 0.4s;
+    -moz-animation:line 0.8s forwards 0.4s;
+    -webkit-animation:line 0.8s forwards 0.4s;
     animation:line 0.8s forwards 0.4s;
+}
+
+@keyframes polyline{
+    from{
+        opacity:1;
+        stroke-dashoffset: 18;
+    }
+    to{
+        opacity:1;
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes line{
     from{
+        opacity:1;
         stroke-dashoffset: 100;
     }
     to{
+        opacity:1;
         stroke-dashoffset: 0;
     }
 }
@@ -1073,7 +1111,12 @@ header.bg{
     .work-link .left-area .date{
         margin-bottom:1.5rem
     }
-        
+    .layout-item .work-link .goto{
+        text-indent: -999px;
+    }
+    .layout-item.act .work-link .goto svg{
+        left:4rem;
+    }
 }
 @media all and (max-width:960px){
     html{
