@@ -929,6 +929,9 @@ img{border:0;}
 }
 
 .layout-item .work-link .work-image img{
+    -o-clip-path:inset(0 0 100% 0);
+    -moz-clip-path:inset(0 0 100% 0);
+    -webkit-clip-path:inset(0 0 100% 0);
     clip-path:inset(0 0 100% 0);
 }
 .work-link:hover .work-image img{
@@ -942,7 +945,10 @@ img{border:0;}
 }
 @keyframes clipImage{
     to{
-        clip-path:inset(0 0 0 0)
+        -o-clip-path:inset(0 0 0 0);
+        -moz-clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
+        clip-path:inset(0 0 0 0);
     }
 }
 
