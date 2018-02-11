@@ -927,9 +927,7 @@ img{border:0;}
     height:auto;
     transition:0.3s;
 }
-.layout-item:first-child .work-link .work-image img{
-    clip-path:inset(0 0 0 0);
-}
+
 .layout-item .work-link .work-image img{
     clip-path:inset(0 0 100% 0);
 }

@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function(){
-	Scroller();
 	tPage();
 	Slider();
 });
@@ -54,7 +53,6 @@ $('.menu-btn').addEventListener('click',function(){
 
 function Scroller(){
 	var $item =	$('.layout-item');
-	$item[0].classList.add('act')
 	function offsetValue(i){
 		var itemOffset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 200 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight) );	
 		return itemOffset;
@@ -66,8 +64,9 @@ function Scroller(){
 			}
 		});		
 	})();	
-	document.addEventListener( 'scroll', Scroller)
 }
+
+document.addEventListener( 'scroll', Scroller)
 
 function Slider() {
 	var	$slider = $('.slider'),
