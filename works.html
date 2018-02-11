@@ -15,7 +15,15 @@ pagename : works
             {% for post in site.posts %}
             <li class="layout-item work-item">
                 <a href="{{ post.link }}" class="work-link">
-                    <p class="top-area clearfix">WORK {{ post.number }}<span class="goto clearfix">GO TO SITE</span></p>
+                    <p class="top-area clearfix">WORK {{ post.number }}
+                    <span class="goto ts">
+                        GO TO SITE
+                        <svg>
+                            <line x1="0" x2="70" y1="30" y2="30"></line>
+                            <polyline points="64 25 70 30 64 36"></polyline>
+                        </svg>
+                    </span>
+                    </p>
                     <div class="work-image"><img src="{{ post.image }}" alt="work"></div>
                     <div class="left-area">
                         <h4 class="subtitle">{{ post.title }}</h4>
