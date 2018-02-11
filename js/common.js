@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
+	Scroller();
 	tPage();
 	Slider();
 });
@@ -50,6 +51,23 @@ document.addEventListener('scroll',function(){
 $('.menu-btn').addEventListener('click',function(){
 	$('.nav-mobile').classList.toggle('open');
 })
+
+function Scroller(){
+	var $item =	$('.layout-item');
+	$item[0].classList.add('act')
+	function offsetValue(i){
+		var itemOffset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 200 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight) );	
+		return itemOffset;
+	};
+	(function scrollAdd() {
+		$item.forEach( function($item) {
+			if(offsetValue($item)){
+				$item.classList.add('act')
+			}
+		});		
+	})();	
+	document.addEventListener( 'scroll', Scroller)
+}
 
 function Slider() {
 	var	$slider = $('.slider'),
