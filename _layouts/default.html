@@ -5,7 +5,7 @@
 
 <body>
 <div class="wrap">	
-	<div class="tpage grid" data-page="{{ page.pagename }}">
+	<div class="tpage tpage-{{ page.pagename }} grid out" data-page="{{ page.pagename }}">
     	{% include griditem.html %}
 	</div>
 	{% if page.pagename != 'intro' %}

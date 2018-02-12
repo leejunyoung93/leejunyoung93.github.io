@@ -1,6 +1,50 @@
 document.addEventListener('DOMContentLoaded', function(){
-	tPage();
+	/* 페이지 오픈 애니메이션 종료. */
+	var $tpage =  $('.tpage');
+	setTimeout(function(){
+		$tpage.classList.add('hidden')
+	},1500);
+
+	/* 페이지 클로우즈 애니메이션 시작. */
+	var $tpage_link = document.querySelectorAll('.link');
+	$tpage_link.forEach(function($link){
+		$link.addEventListener('click', function(e){
+			e.preventDefault();
+			var $tpage = $('.tpage');
+			var link_location = this.getAttribute('href');
+			var tpage_target = this.getAttribute('data-link');
+			var tpage_current = $tpage.getAttribute('data-page');
+
+			$tpage.classList.remove('hidden', 'tpage-'+ tpage_current, 'out');
+			$tpage.classList.add('tpage-'+ tpage_target, 'in');
+
+			setTimeout(function(){
+				window.location = link_location;
+			},1800);
+		});
+	});
+
+	// var tpage_current = $tpage.getAttribute('data-page');
+	// $tpage.classList.add('tpage-'+ tpage_current,'out');
+
+	// var $tpage_link = $('.link');
+	// 	for (var i = 0; i < $tpage_link.length; i++) {
+	// 		$tpage_link[i].addEventListener('click',function(evt){
+	// 		evt.preventDefault();
+	// 		link_location = this.getAttribute('href');
+	// 		setTimeout(function(){
+	// 			window.location = link_location
+	// 		},1800);
+	// 		var tpage_target = this.getAttribute('data-link');
+	// 		$tpage.classList.remove('hidden','tpage-'+ tpage_current,'out')
+	// 		$tpage.classList.add('tpage-'+ tpage_target,'in')
+	// 	})
+	// } 
+
+	//tPage();
 	Slider();
+
+	//
 });
 
 function $(selector){
@@ -16,28 +60,9 @@ function $(selector){
 	}
 }
 function tPage(){ 
-	var $tpage =  $('.tpage');
-
-    setTimeout(function(){
-        $tpage.classList.add('hidden')
-	},1500);
 	
-    var tpage_current = $tpage.getAttribute('data-page');
-    $tpage.classList.add('tpage-'+ tpage_current,'out');
-
-	var $tpage_link = $('.link');
-        for (var i = 0; i < $tpage_link.length; i++) {
-            $tpage_link[i].addEventListener('click',function(evt){
-            evt.preventDefault();
-            link_location = this.getAttribute('href');
-            setTimeout(function(){
-                window.location = link_location
-            },1800);
-            var tpage_target = this.getAttribute('data-link');
-            $tpage.classList.remove('hidden','tpage-'+ tpage_current,'out')
-            $tpage.classList.add('tpage-'+ tpage_target,'in')
-        })
-    } 
+	
+	
 }	
 document.addEventListener('scroll',function(){
 	if(window.scrollY > 0){
@@ -129,13 +154,13 @@ function Slider() {
 
 var position = new naver.maps.LatLng(37.3919100, 126.9845080);
 var map = new naver.maps.Map('map', {
-    center: position,
-    zoom: 10
+	center: position,
+	zoom: 10
 });
 var markerOptions = {
-    position: position,
-    map: map,
-    icon: '../img/pin.png'
+	position: position,
+	map: map,
+	icon: '../img/pin.png'
 };
 var marker = new naver.maps.Marker(markerOptions);
 
