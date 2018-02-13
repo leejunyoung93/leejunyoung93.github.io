@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>NOW</title>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Libre+Barcode+39+Extended" rel="stylesheet">
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+			.sub-container{
+				overflow-y: scroll;
+			}
+			#card-slider{
+				margin-top:15% 0;
+			}
+			li{
+				float:left;
+			}
+			li img{
+				width:80%;
+				height:auto;
+			}
+			.popuptext{
+				width:100%;
+				height: 60px;
+				position: absolute;;
+				top:100px;
+			}	
+			.popuptext p{
+				font-size:2.8rem;
+				line-height:30px;
+			}	
+			.alarm-btn a{
+				position:absolute;
+				width:100%;
+				height:100%;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="load">
+			<div class="bounce">
+			<h1 class="N">N</h1><div class="loading-clock"></div><h1 class="W">W</h1>
+		</div>
+		</div>
+		<div class="menu">
+			<div class="menu-content">
+			<div class="menuclose-btn"></div>
+			<div class="user-box">
+				<div class="profile">
+				</div>
+				<h1><strong>이준영님</strong> 환영합니다!</h1>
+				<h2>ab12b1125@gmail.com</h2>
+				<h3 class="code">af</h3>
+				<p>9348 9234 2343 2342</p>
+			</div>
+			<div class="nav-btn-box">
+				<h1>MY NOW</h1>
+				<ul>
+					<li>내 쿠폰함<p>2</p></li>
+					<li>내 알림함<p>N</p></li>
+					<li>회원정보</li>
+					<li>고객센터</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		<div class="menu-overlay"></div>
+		<div class="container">	
+			<nav>
+				<div class="menu-btn"></div>
+				<div id="logo"><strong>NOW</strong> 결제</div>
+				<div class="alarm-btn"><a href="index.html"></a></div>
+			</nav>
+			<div id="bl-main" class="bl-main">
+				<div class="sub-container">
+					<div class="payment-box shadow">
+						<h1>결제 수단</h1>
+						<p>신용카드</p>
+					</div>
+					<div class="payment-box shadow">
+						<h1>상품명</h1>
+						<p>포카리스웨트</p>
+					</div>
+					<div id="card-slider">
+							<div id="card-slider-container">
+								<ul id="card-slider-banner">
+								<li class="card-slider-item">
+									<img src="images/card.png" />
+								</li>
+								<li class="card-slider-item">
+									<img src="images/card.png" />
+								</li>
+								</ul>
+							</div>
+							<div id="card-slider-nav">
+									<div class="card-nav-btn" id="card-prev"></div>
+									<div class="card-nav-btn" id="card-next"></div>
+							</div>
+						</div>
+						<div class="payment-box">
+							<h1>금액</h1>
+							<p>4200원</p>
+						</div>
+						<div class="payment-box">
+							<h1>멤버쉽 할인</h1>
+							<p>-200원</p>
+						</div>
+						<div class="payment-box">
+							<h1>총 금액</h1>
+							<p>3000원</p>
+						</div>
+						<div class="payment-check">
+							<div class="check">
+								V
+							</div>
+							<p>주문 할 상품의 구매 조건을 확인하였으며,<br/>결제 진행에 동의하시겠습니까?</p>
+						</div>
+						<a class="pay cd-popup-trigger" href="javascript:void(0)">구매하기</a>
+						<div class="cd-popup" role="alert">
+								<div class="cd-popup-container">
+									<div class="popuptext">
+									<p>결제가 완료되었습니다.<br/>보관함에서 확인하시겠습니까?</p>
+									</div>
+									<div class="cd-popup-btn">
+									<ul class="cd-buttons">
+										<li><a href="index.html">예</a></li>
+										<li><a href="#0" class="cd-popup-cancel">아니오</a></li>
+									</ul>
+									</div>
+									<a href="#0" class="cd-popup-close img-replace">Close</a>
+								</div> 
+							</div>
+				</div>		
+		</div>
+		</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/boxlayout.js"></script>
+		<script>
+			$(function() {
+				Boxlayout.init();
+			});
+		</script>
+		<script src="js/main.js"></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js'></script>
+		<script>
+			
+			$(window).load(function(){
+				var $container = $('.categoryContainer');
+				$container.isotope({
+					filter: '*',
+					animationOptions: {
+						duration: 750,
+						easing: 'linear',
+						queue: false
+					}
+				});
+			 
+				$('.categoryFilter a').click(function(){
+					$('.categoryFilter .current').removeClass('current');
+					$(this).addClass('current');
+			 
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+						filter: selector,
+						animationOptions: {
+							duration: 750,
+							easing: 'linear',
+							queue: false
+						}
+					 });
+					 return false;
+				}); 
+			});
+			
+			</script>
+	</body>
+</html>

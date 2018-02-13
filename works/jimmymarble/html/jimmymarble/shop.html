@@ -1,0 +1,324 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+<title>Homepage</title>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:300,400,600|Lora" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+</head>
+<style>
+	body{
+		overflow-y:scroll;
+	}
+	footer{
+		position:relative;
+	}	
+</style>
+<body>
+<div class="loading">
+	<div class="loader animated slideInLeft">
+		<svg version="1.1" id="L9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+			<rect x="20" y="50" width="4" height="10" fill="#fff">
+			  <animateTransform attributeType="xml"
+				attributeName="transform" type="translate"
+				values="0 0; 0 20; 0 0"
+				begin="0" dur="0.6s" repeatCount="indefinite" />
+			</rect>
+			<rect x="30" y="50" width="4" height="10" fill="#fff">
+			  <animateTransform attributeType="xml"
+				attributeName="transform" type="translate"
+				values="0 0; 0 20; 0 0"
+				begin="0.2s" dur="0.6s" repeatCount="indefinite" />
+			</rect>
+			<rect x="40" y="50" width="4" height="10" fill="#fff">
+			  <animateTransform attributeType="xml"
+				attributeName="transform" type="translate"
+				values="0 0; 0 20; 0 0"
+				begin="0.4s" dur="0.6s" repeatCount="indefinite" />
+			</rect>
+		</svg>
+	</div>
+</div>
+<nav>
+	<ul>
+		<li class="logo">JIMMY MARBLE</li>
+		<li class="nav-center">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html" class="select">Shop</a></li>
+				<li><a href="info.html">Addtional Info</a></li>
+				<li><a href="http://jimmymarble.tumblr.com/">Blog</a></li>
+			</ul>
+		</li>
+		<li class="nav-right">
+			<ul>
+				<li>
+					<select name="lan">
+						<option value="En">English</option>
+						<option value="Ko">Korean</option>
+					</select>
+				</li>
+				<li><div class="btn btn-menu"><i class="fa fa-bars" aria-hidden="true"></i></div></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<div class="menu">
+<div class="btn btn-close"><i class="fa fa-times fa-2x" aria-hidden="true" style="color:#fff"></i></div>
+	<ul class="menu_inner">
+		<li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
+		<li class="menu_item"><a class="menu_link" href="shop.html">Shop</a></li>
+		<li class="menu_item"><a class="menu_link" href="info.html">Additional Info</a></li>
+		<li class="menu_item"><a class="menu_link" href="http://jimmymarble.tumblr.com/">Blog</a></li>
+	</ul>
+</div>	
+<section class="shop">
+	<div class="shop-container">
+		<div class="shop-content">
+			<div class="shop-slider">
+				<div id="slider" class="flexslider">
+				  <ul class="slides">
+					<li><img src="img/shops1.jpg" /></li>
+					<li><img src="img/shops2.jpg" /></li>
+					<li><img src="img/shops3.jpg" /></li>
+					<li><img src="img/shops4.jpg" /></li>
+					<li><img src="img/shops5.jpg" /></li>
+					<li><img src="img/shops6.jpg" /></li>
+				  </ul>
+				</div>
+				<div id="carousel" class="flexslider">
+				  <ul class="slides">
+					<li><img src="img/shops1.jpg" /></li>
+					<li><img src="img/shops2.jpg" /></li>
+					<li><img src="img/shops3.jpg" /></li>
+					<li><img src="img/shops4.jpg" /></li>
+					<li><img src="img/shops5.jpg" /></li>
+					<li><img src="img/shops6.jpg" /></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="shop-explanation">
+				<h1>Miu Miu</h1>
+				<h2>May 21, 2017</h2>
+				<h3>$200.00</h3>
+				<p>8x10" or 13x20" printed on matte photo paper. 1/200, hand signed.<br/><br/>I've partnered with Simply Framed to offer high quailty custom framing made by hand, here in the USA. Please allow an additional 5-10 days for your delivery.<br/><br/><strong>Details</strong>: White wood frame. UV-shieding pixeiglass. custom cut acid-free 4-ply white mat with beveled edges, achival acid-free foam core backing. paperback finish, wall bumpers. Each frame arrives gift-wrapped in kraft paper with hardware, nails and instruction for hanging and care.</p>
+				<p class="star">
+								<fieldset class="rating">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>				
+				</p>
+				<form class="shop-form">
+					<ul>
+						<li><input type="number" class="field-number" /></li>
+						<li>
+							<select class="field-select">
+								<option value="select-size">select-size</option>
+								<option value="8×10-Unframed">8×10 Unframed</option>
+								<option value="13×20-Unframed">13×20 Unframed</option>
+								<option value="8×10-Framed">8×10 Framed w/2"</option>
+								<option value="13×20-Framed">13×20 Framed w/2"</option>
+							</select>
+						</li>
+						<li><input type="submit" value="Add To Cart" /></li>
+					</ul>
+				</form>
+				<div class="share">
+					<ul>
+						<li>Share This :</li>
+						<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+						<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+						<li><i class="fa fa-tumblr-square" aria-hidden="true"></i></li>
+						<li><i class="fa fa-behance-square" aria-hidden="true"></i></li>
+						<li><i class="fa fa-pinterest-square" aria-hidden="true"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="shop-bottom">
+			<div class="shop-review">
+				<h1>REVIEWS</h1>
+				<div class="review-box">
+					<div class="review">
+						<img src="img/review1.png" />
+						<h2>EMMA WATSON</h2>
+								<fieldset class="rating">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<span class="review-time"><i class="fa fa-calendar" aria-hidden="true"></i>May 15, 2017 at 10:51 am</span>
+					</div>
+					<div class="review">
+						<img src="img/review2.png" />
+						<h2>EMMA STONE</h2>
+								<fieldset class="rating">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						<span class="review-time"><i class="fa fa-calendar" aria-hidden="true"></i>May 15, 2017 at 10:51 am</span>
+					</div>
+					<div class="review-btn">
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="shop-comment">
+				<h1>LEAVE A COMMENT</h1>
+				<div class="comment-box">
+					<form class="comment">
+						<ul class="form-style-1">
+							<li>
+								<label>Rating <span class="required">*</span></label>
+								<fieldset class="rating">
+									<input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+									<input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+									<input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+									<input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+									<input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+									<input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+									<input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+								</fieldset>
+							</li>
+							<li>
+								<label>Your Name<span class="required">*</span></label>
+								<input type="name" name="field1" class="field-long" />
+							</li>
+							<li>
+								<label>Email Address<span class="required">*</span></label>
+								<input type="Email" name="field2" class="field-long" />
+							</li>
+							<li>
+								<label>Comment <span class="required">*</span></label>
+								<textarea name="field3" id="field3" class="field-long field-textarea"></textarea>
+							</li>
+							<li>
+								<input type="submit" value="Submit" />
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="social">
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+		</ul>
+		<copyright>© 2017 All rights reserved. Development with by Jimmy Marble and Miu Miu.</copyright>
+	</div>
+</footer>
+<script src="js/anime.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/main.js"></script>
+<script>
+		(function() {
+			var navEl = document.querySelector('div.menu'),
+				revealer = new RevealFx(navEl),
+				closeCtrl = navEl.querySelector('.btn-close');
+
+			document.querySelector('.btn-menu').addEventListener('click', function() {
+				revealer.reveal({
+					bgcolor: '#fdaf46',
+					duration: 400, 
+					easing: 'easeInOutCubic',
+					onCover: function(contentEl, revealerEl) {
+						navEl.classList.add('menu-open');
+						contentEl.style.opacity = 1;
+					},
+					onComplete: function() {
+						closeCtrl.addEventListener('click', closeMenu);
+					}
+				});
+			});
+
+			function closeMenu() {
+				closeCtrl.removeEventListener('click', closeMenu);
+				navEl.classList.remove('menu-open');
+				revealer.reveal({
+					bgcolor: '#fdaf46',
+					duration: 400, 
+					easing: 'easeInOutCubic',
+					onCover: function(contentEl, revealerEl) {
+						navEl.classList.remove('menu-open');
+						contentEl.style.opacity = 0;
+					}
+				});
+			}
+		})();
+</script>
+ <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 118,
+        itemMargin: 10,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+ </script>
+</body>
+</html>

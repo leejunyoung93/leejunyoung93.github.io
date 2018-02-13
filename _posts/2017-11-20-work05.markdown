@@ -3,6 +3,6 @@ number : '5th'
 title : 'ALL OF US'
 type : 'WEB SITE'
 image : '/img/work5.jpg'
-link : 'http~~'
+link : 'https://www.youtube.com/watch?v=6fiRb8HLiCI&t=103s'
 explanation : 'PHP를 사용하여 기능을 구현한 베스트 웹툰 소개 사이트입니다.'
 ---

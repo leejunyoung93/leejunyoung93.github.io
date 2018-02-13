@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Welcome</title>
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/animate.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link href="../css/css.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/jquery.isotope.js"></script>
+    
+</head>
+<body>
+<nav>
+    <ul>
+        <li class="nav-logo"><a href="../index.html"><img src="../img/rooms/logo.png" alt=""></a></li>
+        <li class="nav-right">
+            <ul>
+                <li><a href="../sub/rooms.html"><span>ROOMS</span></a></li>
+                <li><a href="../sub/facilities.html">FACILITIES</a></li>
+                <li><a href="../sub/reservation.html">RESERVATION</a></li>
+                <li><a href="../sub/map.html">MAP</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<section class="rooms sub">
+    <div class="tbg">
+        <h1>PREVIEW ROOMS</h1>
+        <a href="javascript:void(0)">SCROLL DOWN</a>
+    </div>
+    <div class="rooms-tab title">
+        <ul>
+        <h1>객실</h1>
+        <p>프렌치 페이퍼의 전 객실은 오션뷰로 바다 쪽을 향해 있습니다</p>
+        <div class="tabfilter">  
+        <ul class="tab-nav">
+        	<li><a href="#" data-filter="*" class="current" >All</a></li>
+            <li><a href="#" data-filter=".A" >A동</a></li>
+            <li><a href="#" data-filter=".B" >B동</a></li>
+            <li><a href="#" data-filter=".C" >C동</a></li>
+            <li><a href="#" data-filter=".H" >H동</a></li>
+        </ul>
+       </div>
+       <div class="tabcontainer">
+            	<div class="tab-box A">
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-a.jpg" alt=""><span><h1>A101</h1><p>Poolvila</p></span></a>
+                </div>
+                <div class="tab-box B">
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-b.jpg" alt=""><span><h1>B101</h1><p>Loft</p></span></a>
+                </div>
+                <div class="tab-box C">
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-c.jpg" alt=""><span><h1>C101</h1><p>Loft</p></span></a>
+                </div>
+                <div class="tab-box H" >
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-h.jpg" alt=""><span><h1>H101</h1><p>Poolvila+Loft</p></span></a>
+                </div>
+                <div class="tab-box A">
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-a2.jpg" alt=""><span><h1>A102</h1><p>Poolvila</p></span></a>
+                </div>
+                <div class="tab-box H">
+                	<a href="../sub/rooms -.html"><img src="../img/rooms/tab/tab-h2.jpg" alt=""><span><h1>H102</h1><p>Poolvila+Loft</p></span></a>
+                </div>
+       </div>
+       </ul>
+    </div>
+</section>
+<footer>
+    <div class="go">
+        <ul>
+            <li><a href="#"><h2>계좌안내</h2><p>대구은행 504-10-176849-2 이재욱<br/>대구은행 508-12-698600-3 한창균<br/>농협 302-1051-4975-41 서기순</p></a></li>
+            <li><a href="../sub/reservation.html"><h2>예약안내</h2><p>자세히 읽어보신 후 예약하세요</p></a></li>
+            <li><a href="../sub/map.html"><h2>교통안내</h2><p>오시는 길 안내입니다<br/>쉽고 편안하게 찾아오세요</p></a></li>
+            <li><a href="#"><h2>문의하기</h2><p><span>054-787-1353</span><br/>문의시간 AM10:00 - PM:07:30
+<br/>문의시간 엄수바랍니다</p></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <img src="../img/main/logo.png">
+        <p>프렌치페이퍼 | 경북 울진군 후포면 금음리 46</p>
+        <p>대표이사 : 노빈 | 사업자등록번호 : 50131-10586</p>
+        <p>COPYRIGHT© 2016 FRENCHPAPER.</p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+$(window).load(function(){
+  
+  
+  var $container = $('.tabcontainer'),
+      $body = $('body'),
+      colW = 375,
+      columns = null;
+  
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+  
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -450 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+    
+  }).smartresize(); // trigger resize to set container width
+  $('.tabfilter a').click(function(){
+        $('.tabfilter .current').removeClass('current');
+        $(this).addClass('current');
+ 
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+			
+            filter: selector,
+         });
+         return false;
+    });
+  
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

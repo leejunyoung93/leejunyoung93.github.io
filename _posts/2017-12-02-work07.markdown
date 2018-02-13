@@ -3,6 +3,6 @@ number : '7th'
 title : 'PORTFOLIO'
 type : 'WEB SITE'
 image : '/img/work7.jpg'
-link : 'http~~'
+link : '/works/portfolio/index.html'
 explanation : '웹표준과 웹접근성을 준수하여 반응형으로 제작한 웹사이트입니다.'
 ---

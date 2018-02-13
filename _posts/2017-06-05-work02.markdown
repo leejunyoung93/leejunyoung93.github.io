@@ -3,6 +3,6 @@ number : '2nd'
 title : 'HOUSE STARK'
 type : 'WEB SITE'
 image : '/img/work2.jpg'
-link : 'http~~'
+link : '/works/housestark/index.html'
 explanation : '왕좌의 게임에 나오는 스타크 가문을 소개하는 웹사이트입니다.'
 ---

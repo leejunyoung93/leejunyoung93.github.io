@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Test</title>
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+    <link href="../css/animate.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link href="../css/css.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/js.js"></script>
+    <script src="../js/jquery.isotope.js"></script>
+    
+</head>
+<body onload="initialize()">
+<nav>
+    <ul>
+        <li class="nav-logo"><a href="../index.html"><img src="../img/rooms/logo.png" alt=""></a></li>
+        <li class="nav-right">
+            <ul>
+                <li><a href="../sub/rooms.html">ROOMS</a></li>
+                <li><a href="../sub/facilities.html">FACILITIES</a></li>
+                <li><a href="../sub/reservation.html">RESERVATION</a></li>
+                <li><a href="../sub/map.html"><span>MAP</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<section class="map">
+    <div class="map-contents title">
+        <ul>
+        <h1>오시는 길</h1>
+        <p>쉽고 편안하게 찾아오세요</p>
+        <div class="google-map">  
+            <div id="map_canvas" style="width:980px; height:520px;"></div> 
+            <h1>프렌치 페이퍼 펜션</h1>
+            <p>(구)[767831] 경상북도 울진군 후포면 금음리 46-1<br/>(신)[36371] 경상북도 울진군 후포면 동해대로 334-1</p>
+            <p>전화번호 : 054-787-7219</p>
+            <span>*픽업 서비스를 이용하실 경우 하루 전 연락 바랍니다</span>
+       </div>
+       </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="go">
+        <ul>
+            <li><a href="#"><h2>계좌안내</h2><p>대구은행 504-10-176849-2 이재욱<br/>대구은행 508-12-698600-3 한창균<br/>농협 302-1051-4975-41 서기순</p></a></li>
+            <li><a href="../sub/reservation.html"><h2>예약안내</h2><p>자세히 읽어보신 후 예약하세요</p></a></li>
+            <li><a href="../sub/map.html"><h2>교통안내</h2><p>오시는 길 안내입니다<br/>쉽고 편안하게 찾아오세요</p></a></li>
+            <li><a href="#"><h2>문의하기</h2><p><span>054-787-1353</span><br/>문의시간 AM10:00 - PM:07:30
+<br/>문의시간 엄수바랍니다</p></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        <img src="../img/main/logo.png">
+        <p>프렌치페이퍼 | 경북 울진군 후포면 금음리 46</p>
+        <p>대표이사 : 노빈 | 사업자등록번호 : 50131-10586</p>
+        <p>COPYRIGHT© 2016 FRENCHPAPER.</p>
+    </div>
+</footer>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ko"></script>
+
+ <script> 
+  function initialize() { 
+  var myLatlng = new google.maps.LatLng(36.670242, 129.436860); // y, x좌표값
+  var mapOptions = { 
+        zoom: 17, 
+        center: myLatlng, 
+        mapTypeId: google.maps.MapTypeId.ROADMAP 
+  } 
+ 
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  var marker = new google.maps.Marker({ 
+            position: myLatlng, 
+            map: map, 
+            title: "프렌치 페이퍼" 
+  }); 
+  var infowindow = new google.maps.InfoWindow( 
+          { 
+            content: "36371 경상북도 울진군 후포면 동해대로 334-1", 
+            maxWidth: 300 
+          } 
+  ); 
+
+  google.maps.event.addListener(marker, 'click', function() { 
+  infowindow.open(map, marker); 
+  }); 
+  } 
+ </script> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

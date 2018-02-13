@@ -3,6 +3,6 @@ number : '6th'
 title : 'SCI-FI'
 type : 'WEB SITE'
 image : '/img/work6.jpg'
-link : 'http~~'
+link : '/works/interaction/index.html'
 explanation : '순수 코딩만으로 구현한 인포그래픽 사이트입니다.(지도 제외)'
 ---
