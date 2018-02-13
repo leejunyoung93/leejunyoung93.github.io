@@ -38,6 +38,17 @@ img{border:0;}
     transition:0.5s cubic-bezier(0.645,0.045,0.355,1);
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #a9acb5; 
+}
 
 /* layout */
 .header{
