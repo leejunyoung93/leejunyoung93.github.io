@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function(){
 			},1800);
 		});
 	});
-	
 	$('.menu-btn').addEventListener('click',function(){
 		$('.nav-mobile').classList.toggle('open');
 	})
@@ -66,9 +65,8 @@ function Scroller(){
 		if(offsetValue($item)){
 			$item.classList.add('act')
 		}
-	})	
+	});	
 }
-
 
 
 function Slider() {
