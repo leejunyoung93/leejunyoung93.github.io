@@ -56,14 +56,26 @@ function Scroller(){
 		$('header').classList.remove('bg')
 	}
 
-	var $item =	$('.layout-item');
+	var $item =	$('.layout-item'),
+		$item_link = $('.item-link');
 	function offsetValue(i){
-		var itemOffset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 200 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight) );	
-		return itemOffset;
+		var item_offset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 350 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight - 250) );	
+		return item_offset;
 	};
-	$item.forEach( function($item) {
-		if(offsetValue($item)){
-			$item.classList.add('act')
+	$item_link.forEach(function(link){
+		link.addEventListener('click',function(evt){
+			evt.preventDefault();
+			var scroll_position = $(this.getAttribute('href')).offsetTop - 100;
+			window.scroll(0,scroll_position);
+		})	
+	});
+	$item.forEach(function(e) {
+		var item_id = e.getAttribute('id');
+		if(offsetValue(e)){
+			e.classList.add('act');
+			$('a[href*=' + item_id + ']').classList.add('act');
+		}else{
+			$('a[href*=' + item_id + ']').classList.remove('act');
 		}
 	});	
 }

@@ -9,11 +9,20 @@ pagename : works
 </div>
 <div class="layout grid4">
     <section class="works">
+        <nav class="list-nav">
+            <a href="#num7th" class="item-link">PORTFOLIO</a>
+            <a href="#num6th" class="item-link">SCI-FI</a>
+            <a href="#num5th" class="item-link">ALL OF US</a>
+            <a href="#num4th" class="item-link">NOW</a>
+            <a href="#num3rd" class="item-link">JIMMY MARBLE</a>
+            <a href="#num2nd" class="item-link">HOUSE STARK</a>
+            <a href="#num1st" class="item-link">FRENCH PAPER</a>
+        </nav>
         <div class="myworks">
         <h3 class="title">MY<span class="block">WORKS</span></h3>
         <ol class="layout-list layout-list-alternative works-list clearfix">
             {% for post in site.posts %}
-            <li class="layout-item work-item">
+            <li class="layout-item work-item" id="num{{ post.number }}">
                 <a href="{{ post.link }}" class="work-link">
                     <p class="top-area clearfix">WORK {{ post.number }}
                     <span class="goto ts">
