@@ -11,10 +11,10 @@ phone : '010.7278.8789'
 
 title: 'Jello.'
 author : '이준영'
-image : ''
+image : '/img/jello.jpg'
 keyword : ''
 description: ''
 
 baseurl: '' 
 
-url: 'https://leejunyoung93.github.io' # 기본이 되는 url
+url: 'https://leejunyoung93.github.io' 
