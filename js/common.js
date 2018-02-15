@@ -59,7 +59,7 @@ function Scroller(){
 	var $item =	$('.layout-item'),
 		$item_link = $('.item-link');
 	function offsetValue(i){
-		var item_offset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 350 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight - 250) );	
+		var item_offset = (window.scrollY >= ( i.offsetTop - window.innerHeight + 300 ) ) && (window.scrollY <= (i.offsetTop + i.offsetHeight - 250) );	
 		return item_offset;
 	};
 	$item_link.forEach(function(link){
