@@ -992,17 +992,17 @@ body::-webkit-scrollbar-thumb {
 }
 @-o-keyframes clipImage{
     to{
-        clip-path:inset(0 0 0 0);
+        -o-clip-path:inset(0 0 0 0);
     }
 }
 @-moz-keyframes clipImage{
     to{
-        clip-path:inset(0 0 0 0);
+        -moz-clip-path:inset(0 0 0 0);
     }
 }
 @-webkit-keyframes clipImage{
     to{
-        clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
     }
 }
 @keyframes clipImage{
