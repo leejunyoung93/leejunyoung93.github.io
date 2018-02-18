@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			$tpage.classList.remove('hidden', 'tpage-'+ tpage_current, 'out');
 			$tpage.classList.add('tpage-'+ tpage_target, 'in');
-
 			setTimeout(function(){
 				window.location = link_location;
 			},1800);
@@ -24,7 +23,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	$('.menu-btn').addEventListener('click',function(){
 		$('.nav-mobile').classList.toggle('open');
-	})
+	});
+
 	/* scroller */
 	setTimeout(function(){
 		Scroller();

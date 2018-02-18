@@ -360,6 +360,9 @@ body::-webkit-scrollbar-thumb {
     text-align:left;
     line-height:6rem;
 }
+.nav .link.act{
+    color:#4d38ed;
+}
 .nav .reveal-horizontal .reveal{
     animation-duration: 1s;
     animation-delay:1.5s;
@@ -467,8 +470,8 @@ body::-webkit-scrollbar-thumb {
     }
 }
 .nav-mobile .menu .menu-item .link{
-    font-size:2rem;
     color:#fff;
+    font-size:2rem;
 }
 .nav-mobile .menu .menu-item .link .link-num{
     margin-right: 0.5rem;
