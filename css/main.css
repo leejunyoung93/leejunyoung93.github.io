@@ -689,7 +689,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0);
 }
 
-.slider .slide .coverletter-mobile{
+.slider .slide .coverletter-mobile.ts{
     display:none;
     width:100%;
     height:1rem;
@@ -711,7 +711,7 @@ body::-webkit-scrollbar-thumb {
     background:#a9acb5;
 }
 
-.slider .slide.current .coverletter-mobile{
+.slider .slide.current .coverletter-mobile.ts{
     transform:translateX(0);
     opacity:1;
 }
@@ -1132,7 +1132,7 @@ header.bg{
     .coverletter-web{
         display:none;
     }
-    .slider .slide .coverletter-mobile{
+    .slider .slide .coverletter-mobile.ts{
         display: block;
     }
     .slider .slide .slide-text{
