@@ -689,7 +689,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(0);
 }
 
-.coverletter-mobile{
+.slider .slide .coverletter-mobile{
     display:none;
     width:100%;
     height:1rem;
@@ -700,7 +700,7 @@ body::-webkit-scrollbar-thumb {
     opacity:0;
     transform: translateX(30%);
 }
-.coverletter-mobile::before{
+.slider .slide .coverletter-mobile::before{
     content:'';
     position:relative;
     top:50%;
@@ -1132,7 +1132,7 @@ header.bg{
     .coverletter-web{
         display:none;
     }
-    .coverletter-mobile{
+    .slider .slide .coverletter-mobile{
         display: block;
     }
     .slider .slide .slide-text{
