@@ -994,16 +994,19 @@ body::-webkit-scrollbar-thumb {
 @-o-keyframes clipImage{
     to{
         -o-clip-path:inset(0 0 0 0);
+        clip-path:inset(0 0 0 0);
     }
 }
 @-moz-keyframes clipImage{
     to{
         -moz-clip-path:inset(0 0 0 0);
+        clip-path:inset(0 0 0 0);
     }
 }
 @-webkit-keyframes clipImage{
     to{
         -webkit-clip-path:inset(0 0 0 0);
+        clip-path:inset(0 0 0 0);
     }
 }
 @keyframes clipImage{
