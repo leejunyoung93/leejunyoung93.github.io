@@ -1008,6 +1008,9 @@ body::-webkit-scrollbar-thumb {
 }
 @keyframes clipImage{
     to{
+        -moz-clip-path:inset(0 0 0 0);
+        -o-clip-path:inset(0 0 0 0);
+        -webkit-clip-path:inset(0 0 0 0);
         clip-path:inset(0 0 0 0);
     }
 }
