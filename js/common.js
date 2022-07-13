@@ -58,7 +58,7 @@ function Scroller() {
         $item_link = $('.item-link');
     function offsetValue(i) {
         var item_offset =
-            window.scrollY >= i.offsetTop - window.innerHeight + 300 &&
+            window.scrollY >= i.offsetTop - window.innerHeight + 200 &&
             window.scrollY <= i.offsetTop + i.offsetHeight - 250;
         return item_offset;
     }
