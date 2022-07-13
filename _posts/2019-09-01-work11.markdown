@@ -4,5 +4,5 @@ title: 'ISS**'
 type: 'WEB SITE'
 image: '/img/work11.jpg'
 link: 'https://drive.google.com/file/d/1v7jbVtv3n0n_Kf5kq7rE3P6D2aQJpxJH/view?usp=sharing'
-explanation: 'ICON 기반의 블록체인 증명서 발급 서비스입니다.'
+explanation: 'ICON LoopChain Enterprise 관리자 도구입니다.'
 ---
