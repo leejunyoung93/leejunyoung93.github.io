@@ -1,0 +1,8 @@
+---
+number: '17th'
+title: 'KOKKOK'
+type: 'DESKTOP APP & NATIVE APP'
+image: '/img/work17.jpg'
+link: ''
+explanation: 'LVMC 홀딩스 라오스 현지 채팅 & SNS 어플리케이션 서비스입니다.'
+---

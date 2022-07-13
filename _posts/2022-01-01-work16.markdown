@@ -1,0 +1,8 @@
+---
+number: '16th'
+title: 'PICANPI'
+type: 'WEB SITE'
+image: '/img/work16.jpg'
+link: 'https://pcanpi.com/landing'
+explanation: 'AI기반 영문법 검사 서비스입니다.'
+---
