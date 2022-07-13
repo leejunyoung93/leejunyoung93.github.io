@@ -1,0 +1,8 @@
+---
+number: '13th'
+title: 'BALKARI UI KIT'
+type: 'Library'
+image: '/img/work13.jpg'
+link: 'https://www.npmjs.com/package/balkari-ui-kit'
+explanation: '사내 디자이너와 협업을 위해 storybook mdx를 구성하고 효율적인 컴포넌트 작성을 위한 디자인 시스템 입니다.'
+---

@@ -1,0 +1,8 @@
+---
+number: '14th'
+title: 'YOUHA'
+type: 'WEB SITE'
+image: '/img/work14.jpg'
+link: 'https://www.youha.info/'
+explanation: '광고대행사가 유튜버와 마케팅 진행을 도와주는 서비스입니다.'
+---

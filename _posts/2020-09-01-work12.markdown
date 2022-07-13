@@ -1,0 +1,8 @@
+---
+number: '12th'
+title: 'IR**'
+type: 'WEB SITE'
+image: '/img/work12.jpg'
+link: ''
+explanation: 'Hyperledger Fabric, 프라이빗 체인에 전개된 노드와 블록 동기 상태를 확인하는 모니터링 툴입니다.'
+---
