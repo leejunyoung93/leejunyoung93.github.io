@@ -3,6 +3,6 @@ number: '15th'
 title: 'TILDER'
 type: 'WEB SITE'
 image: '/img/work15.jpg'
-link: ''
+link: 'https://github.com/leejunyoung93/tilder-web'
 explanation: 'AI기반 녹취록 서비스입니다.'
 ---
