@@ -1,8 +1,0 @@
----
-number: '8th'
-title: 'ICONEST'
-type: 'WEB SITE'
-image: '/img/work8.jpg'
-link: 'https://brunch.co.kr/@helloiconworld/91'
-explanation: '사용자가 복잡한 코딩 없이 간단한 정보 입력만으로 새로운 Dapp 프로젝트를 생성할 수 있는 서비스입니다.'
----

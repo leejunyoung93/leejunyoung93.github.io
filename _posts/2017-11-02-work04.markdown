@@ -1,8 +1,8 @@
 ---
-number : '4th'
-title : 'NOW'
-type : 'MOBILE WEB'
-image : '/img/work4.jpg'
-link : '/works/now/index.html'
-explanation : '디자이너와 협업하여 제작한 NOW의 모바일 웹사이트입니다.'
+number: '4th'
+title: 'NOW'
+type: 'MOBILE WEB'
+image: '/img/work4.jpg'
+link: '/works/now/index.html'
+explanation: '디자이너와 협업하여 제작한 NOW의 모바일 웹사이트입니다.'
 ---
