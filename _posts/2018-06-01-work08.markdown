@@ -4,5 +4,5 @@ title: 'ICONEST'
 type: 'WEB SITE'
 image: '/img/work8.jpg'
 link: 'https://www.wishket.com/partners/p/ab12b1125/portfolio/182280'
-explanation: '사용자가 복잡한 코딩 없이 간단한 정보 입력만으로 새로운 Dapp 프로젝트를 생성할 수 있는 서비스입니다.'
+explanation: '간단한 정보 입력만으로 새로운 Dapp 프로젝트를 생성할 수 있는 서비스입니다.'
 ---
