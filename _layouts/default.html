@@ -1,24 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
+    {% include head.html %}
 
-{% include head.html %}
-
-<body>
-<div class="wrap">	
-	<div class="tpage tpage-{{ page.pagename }} grid out" data-page="{{ page.pagename }}">
-    	{% include griditem.html %}
-	</div>
-	{% if page.pagename != 'intro' %}
-		{% include header.html %}
-	{% endif %}
-	<main class="container {{ page.pageclass }}">
-		{% if page.pagename != 'intro' %}
-		<h2 hidden>{{ page.pagename }}</h2>
-		{% endif %}		
-		{{ content }}
-	</main>
-</div>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=MMEhvjc9QCNWooqccZBM"></script>
-<script src="/js/common.js"></script>
-</body>
+    <body>
+        <div class="wrap">
+            <div
+                class="tpage tpage-{{ page.pagename }} grid out"
+                data-page="{{ page.pagename }}"
+            >
+                {% include griditem.html %}
+            </div>
+            {% if page.pagename != 'intro' %} {% include header.html %} {% endif
+            %}
+            <main class="container {{ page.pageclass }}">
+                {% if page.pagename != 'intro' %}
+                <h2 hidden>{{ page.pagename }}</h2>
+                {% endif %} {{ content }}
+            </main>
+        </div>
+        <script
+            type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=xucd4o3iei"
+        ></script>
+        <script src="/js/common.js"></script>
+    </body>
 </html>
