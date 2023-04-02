@@ -1,0 +1,8 @@
+---
+number: '19th'
+title: 'HEARTVERSE'
+type: 'DESKTOP'
+image: '/img/work19.jpg'
+link: 'https://heartverse.xyz'
+explanation: 'babylon.js로 구현한 heartverse 메인 홈페이지 입니다.'
+---
