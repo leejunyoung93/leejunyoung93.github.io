@@ -1,0 +1,8 @@
+---
+number: '18th'
+title: 'WCG'
+type: 'DESKTOP'
+image: '/img/work18.jpg'
+link: 'https://wcg.lvup.gg/tournament-information'
+explanation: 'wcg information 홈페이지 입니다`'
+---
